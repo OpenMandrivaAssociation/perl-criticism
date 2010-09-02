@@ -14,8 +14,11 @@ Source0:    http://www.cpan.org/modules/by-module//%{upstream_name}-%{upstream_v
 BuildRequires: perl(IO::String)
 BuildRequires: perl(Perl::Critic)
 BuildRequires: perl(Test::More)
+
 BuildArch: noarch
 BuildRoot: %{_tmppath}/%{name}-%{version}-%{release}
+
+Provides: perl(criticism)
 
 %description
 This pragma enforces coding standards and promotes best-practices by
@@ -43,7 +46,6 @@ by doing an HTTP-post, such as one of these:
 
 %build
 %{__perl} Makefile.PL INSTALLDIRS=vendor
-
 %make
 
 %check
@@ -61,5 +63,3 @@ rm -rf %buildroot
 %doc Changes LICENSE META.yml README
 %{_mandir}/man3/*
 %perl_vendorlib/*
-
-
