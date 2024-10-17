@@ -8,7 +8,7 @@ Release:	5
 Summary:	Perl pragma to enforce coding standards and best-practices
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
