@@ -1,15 +1,13 @@
 %define upstream_name    criticism
-%define upstream_version 1.02
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	1.02
+Release:	7
 
 Summary:	Perl pragma to enforce coding standards and best-practices
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://perlcritic.com
-Source0:	https://cpan.metacpan.org/authors/id/T/TH/THALJEF/criticism/criticism-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/T/TH/THALJEF/criticism/criticism-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -43,7 +41,7 @@ does. You can also invoke the perlcritic web-service from the command line
 by doing an HTTP-post, such as one of these:
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
